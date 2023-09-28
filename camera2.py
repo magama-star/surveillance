@@ -221,11 +221,11 @@ class Camera:
                 self.save_picture()
 
             elif key == ord('v'):
-                # v : zoom 상태를 원상태로 복구
+                # v : zoom 
                 self.touch_init()
 
             elif key == ord('r'):
-                # r : 동영상 촬영 시작 및 종료
+                # r : 
                 self.recording = not self.recording
                 if self.recording:
                     t = Thread(target=cam.record_video)
